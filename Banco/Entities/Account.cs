@@ -21,9 +21,9 @@ namespace Banco.Entities
             Balance = balance;
         }
 
-        public void Withdraw(double amount) //saque, passando quantia
-        {
-            Balance -= amount;
+        public virtual void Withdraw(double amount) //saque, passando quantia
+        { //virtual pois pode ser sobrescrito
+            Balance -= amount+5.0;
         }
 
         public void Deposit(double amount)
